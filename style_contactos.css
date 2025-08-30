@@ -1,0 +1,53 @@
+body{
+    background-color: #a50044;
+}
+
+.caja {
+  width: 200px;            /* Ancho */
+  height: 200px;           /* Alto */
+  background-color: lightblue; /* Color de fondo */
+  color: white;            /* Color del texto */
+  padding: 20px;           /* Espacio interno (entre texto y borde) */
+  border: 2px solid blue;  /* Borde alrededor de la caja */
+  margin: 30px;            /* Espacio hacia afuera de la caja */
+  border-radius: 20px;     /* Bordes redondeados */
+}
+
+h1{
+   color: white;
+}
+
+.card{ 
+  display: flex;           /* Activamos Flexbox */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  height: 200px;           /* Ajusta la altura según tu caja */
+  width: 200px;            /* Ajusta el ancho según tu caja */
+  background-color: blue;  /* Fondo para ver la caja */
+  border-radius: 10px;
+}
+
+.card img{
+  margin-right: -70px;
+   max-width: 300%;   /* Para que la imagen no se deforme */
+  max-height: 100%;  /* Se ajusta dentro de la caja */
+}
+h3{
+  display: flex;
+  margin-top: -170px;
+  text-align: center;
+  margin-left: -70px;
+  margin-right: -130px;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 4px;
+grid-row-gap: 0px;
+}
+
+#yy { grid-area: 1 / 2 / 3; }
+#uu { grid-area: 2 / 3 / 1; }
+#oo { grid-area: 3 / 1 / 2; }

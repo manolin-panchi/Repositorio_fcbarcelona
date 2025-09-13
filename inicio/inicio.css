@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 3, 77);
+}
+.socios {
+      background: #f9f9f9;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .socios h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .carrusel {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(200px * 6); /* 200px por cada logo (5 logos x2 rep) */
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      width: 200px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      max-width: 150px;
+      height: auto;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .slide img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-200px * 3)); } /* se mueve la mitad */
+    }

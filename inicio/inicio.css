@@ -35,6 +35,13 @@ header{
 .navbar a:hover{
     color: aqvidua;
 }
+.texto{
+    text-align: center;
+     width: 500px;       
+      margin: 50px auto;  
+      text-align: center; 
+      padding: 20px;
+}
 .socios {
       background: #f9f9f9;
       padding: 40px 0;

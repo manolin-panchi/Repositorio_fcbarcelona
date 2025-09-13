@@ -9,6 +9,31 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(41, 3, 77);
+    padding: 10px;
+}
+.navbar {
+    background: rgb(41, 3, 77);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 15px 40px;
+    box-shadow: 0 8px 20px rgb(111, 13, 223);
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: color 0,3s;
+}
+.navbar a:hover{
+    color: aqvidua;
 }
 .socios {
       background: #f9f9f9;

@@ -47,6 +47,13 @@ header{
   border-radius: 50px;     /* Bordes redondeados */
 }
 
+h4{
+   color: white;
+   display: flex;
+   text-align: center;
+   margin-top: -30px;
+   margin-left: -12px;
+}
 
 .i1{
     margin-top: -27px;

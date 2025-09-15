@@ -77,3 +77,29 @@ section h2 {
   color: #222;
   text-transform: uppercase;
 }
+
+.jugadores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.jugador {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.jugador:hover {
+  transform: scale(1.05);
+}
+
+.jugador img {
+  width: 100%;
+  height: auto;
+}

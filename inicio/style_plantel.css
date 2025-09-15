@@ -151,3 +151,20 @@ section h2 {
   background: #f2f2f2;
   border-bottom: 2px solid white;
 }
+
+.cuerpo-tecnico-lista .rol {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.cuerpo-tecnico-lista .nombre {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.cuerpo-tecnico-lista .fila:hover {
+  background: #e0e0e0;
+  cursor: pointer;
+}

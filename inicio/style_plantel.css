@@ -63,3 +63,17 @@ header{
   background-color: #004d98; /* azul Barça */
   color: white;
 }
+
+section {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+  text-transform: uppercase;
+}

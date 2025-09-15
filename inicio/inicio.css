@@ -43,16 +43,20 @@ header{
       text-align: center; 
       padding: 20px;
 }
-
-
-
+.contenedor{
+   display: flex;
+      flex-wrap: wrap;      /* hace que bajen si no entran */
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+}
 .caja {
     width: 250px;
     height: 250px;
-    border: 2px solid #333;
+    border: 2px solid rgba(242, 237, 237, 0.3);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(242, 237, 237, 0.3);
     position: relative; /* para que el texto se posicione dentro */
     transition: transform 0.3s;
     cursor: pointer;

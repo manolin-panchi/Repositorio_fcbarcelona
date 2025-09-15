@@ -168,3 +168,40 @@ section h2 {
   background: #e0e0e0;
   cursor: pointer;
 }
+
+    .carrusel {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(200px * 6); 
+      animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+      width: 200px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      max-width: 150px;
+      height: auto;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .slide img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-200px * 3)); } /* se mueve la mitad */
+    }

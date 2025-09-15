@@ -39,3 +39,27 @@ header{
 .navbar a:hover{
     color: aqvidua;
 }
+
+.menu-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.menu-botones a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+}
+
+.menu-botones a:hover {
+  background-color: #004d98; /* azul Barça */
+  color: white;
+}

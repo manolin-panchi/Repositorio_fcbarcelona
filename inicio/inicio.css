@@ -4,6 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(to  right, #a50044, #004D98);
+    
 }
 header{
     display: flex;
@@ -51,7 +52,7 @@ header{
 
 .contenedor{
    display: flex;
-      flex-wrap: wrap;      /* hace que bajen si no entran */
+      flex-wrap: wrap;     
       gap: 20px;
       justify-content: center;
       padding: 20px;
@@ -63,7 +64,7 @@ header{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(242, 237, 237, 0.3);
-    position: relative; /* para que el texto se posicione dentro */
+    position: relative;
     transition: transform 0.3s;
     cursor: pointer;
 }
@@ -94,6 +95,17 @@ header{
     opacity: 1;
 }
 
+.caja2 img{
+
+      display: block;           /* Para que funcione el margin auto */
+      margin: 20px auto;        /* Centrado horizontal */
+      border-radius: 20px;      /* Bordes redondeados */
+      max-width: 100%;           /* Que no se salga de la pantalla */
+      
+      height: auto;             /* Mantiene proporciones */
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.5); /* Opcional: sombra */
+    
+}
 
 
 .socios {

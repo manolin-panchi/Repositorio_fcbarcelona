@@ -120,3 +120,34 @@ section h2 {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
+#cuerpo-tecnico .jugador {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+#cuerpo-tecnico .jugador h2 {
+  font-size: 18px;
+  color: #004d98;
+}
+
+#cuerpo-tecnico .jugador p {
+  color: #a50044;
+  font-weight: bold;
+}
+
+.cuerpo-tecnico-lista {
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cuerpo-tecnico-lista .fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 25px;
+  background: #f2f2f2;
+  border-bottom: 2px solid white;
+}

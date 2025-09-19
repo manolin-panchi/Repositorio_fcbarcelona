@@ -96,14 +96,12 @@ header{
 }
 
 .caja2 img{
-
-      display: block;           /* Para que funcione el margin auto */
-      margin: 20px auto;        /* Centrado horizontal */
-      border-radius: 20px;      /* Bordes redondeados */
-      max-width: 100%;           /* Que no se salga de la pantalla */
-      
-      height: auto;             /* Mantiene proporciones */
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.5); /* Opcional: sombra */
+  display: block;           
+  margin: 20px auto;       
+  border-radius: 20px;      
+  max-width: 100%;           
+  height: auto;            
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5); 
     
 }
 

@@ -104,7 +104,25 @@ header{
   box-shadow: 0px 4px 10px rgba(0,0,0,0.5); 
     
 }
+#btntop {
+  align-items: center;
 
+}
+#btntop.show{
+  opacity:1;
+  visibility: visible;
+}
+#btntop::before{
+  content: "arriba";
+  font-size: 20px;
+  color: #111;
+}
+#btntop:hover{
+  background-color: #004D98;
+}
+#btntop:hover::before{
+  color: beige;
+}
 
 .socios {
       background: #f9f9f9;

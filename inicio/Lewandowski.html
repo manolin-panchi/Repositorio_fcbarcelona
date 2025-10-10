@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Lewandowski</title>
+</head>
+<body>
+  <header>
+    <h1>Robert Lewandowski</h1>
+    <a href="plantel.html">⬅ Volver a la Plantilla</a>
+  </header>
+
+  <section class="perfil-jugador">
+    <div class="info-jugador">
+      <img src="imagenes/08-Pedri.webp" alt="Pedro Pedri" class="foto-jugador">
+      <div class="detalle">
+        <h2>Delantero</h2>
+        <p>Su historia en el club se caracteriza por una gran cifra de goles,
+            alcanzando los 101 tantos en su tercera temporada y posicionándose
+            entre los goleadores históricos más rápidos del club. A pesar de
+            una lesión al inicio de la temporada 2025-2026, el polaco sigue 
+            siendo una pieza clave en el ataque blaugrana.  </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="datos-jugador">
+    <h2>Datos personales</h2>
+    <ul>
+      <li><strong>Lugar de nacimiento:</strong> Varsovia, Polonia</li>
+      <li><strong>Fecha de nacimiento:</strong> 21 de agosto de 1988</li>
+      <li><strong>Peso:</strong> 78 kg</li>
+      <li><strong>Altura:</strong> 185 cm</li>
+    </ul>
+  </section>
+
+  <section class="estadisticas">
+    <h2>Estadísticas 2025/26</h2>
+    <div class="estadisticas-grid">
+      <div class="caja">
+        <h3>Partidos</h3>
+        <p>7</p>
+      </div>
+      <div class="caja">
+        <h3>Goles</h3>
+        <p>4</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="noticias">
+    <h2>Últimas noticias</h2>
+    <div class="noticias-grid">
+      <div class="noticia">
+        <img src="imagenes/07-Ferran_Torres.webp" alt="Noticia Pedri">
+        <p>Lewandowski fallo el penal</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #a50044, #004D98);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #a50044, #004D98);
+      box-shadow: 0 0 25px rgb(108, 13, 37);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 0 0 10px #fff, 0 0 25px #004D98;
+    }
+
+    header a {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      color: #ffcccb;
+      transform: scale(1.1);
+    }
+
+    .perfil-jugador {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .info-jugador {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      background: rgba(236, 235, 235, 0.1);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .info-jugador:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    .foto-jugador {
+      width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(243, 244, 244, 0.3);
+    }
+
+    .detalle h2 {
+      color: #fff;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px #004D98;
+    }
+
+    .detalle p {
+      line-height: 1.7;
+      color: #eee;
+      font-size: 1.05em;
+    }
+    .datos-jugador {
+      margin: 60px auto;
+      width: 80%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .datos-jugador h2 {
+      text-align: center;
+      color: #ffcccb;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #004D98;
+    }
+
+    .datos-jugador ul {
+      list-style: none;
+      padding: 0;
+      line-height: 2;
+      text-align: center;
+      color: #eee;
+    }
+
+    .datos-jugador li strong {
+      color: #fff;
+    }
+
+   
+    .estadisticas {
+      text-align: center;
+      margin: 70px auto;
+      width: 80%;
+    }
+
+    .estadisticas h2 {
+      font-size: 2em;
+      color: #ffcccb;
+      text-shadow: 0 0 10px #004D98;
+    }
+
+    .estadisticas-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .caja {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      width: 180px;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .caja:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    .caja h3 {
+      color: #fff;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .caja p {
+      font-size: 2em;
+      color: #ffcccb;
+      text-shadow: 0 0 10px #004D98;
+    }
+    .noticias {
+      margin: 80px auto;
+      width: 85%;
+    }
+
+    .noticias h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 2em;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px #ffcccb;
+    }
+
+    .noticias-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .noticia {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      width: 280px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .noticia:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    .noticia img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .noticia p {
+      padding: 15px;
+      font-size: 1em;
+      color: #fff;
+    }
+
+  </style>

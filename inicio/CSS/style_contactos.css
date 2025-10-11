@@ -1,34 +1,14 @@
 body{
-    background-color: #a50044;
-   background-image: url('imagenes/fondobarça.jpg'); /* Ajusta la ruta si es necesario */
-    
-    /* Hace que cubra todo el fondo sin deformarse */
-    background-size: cover;
-    
-    /* Centra la imagen */
-    background-position: center;
-    
-    /* No repetir */
-    background-repeat: no-repeat;
-    
-    /* Mantener la imagen fija al hacer scroll */
-    background-attachment: fixed;
-    
-    /* Asegura que el contenido quede por encima */
+    background-image: url('imagenes/fondobarça.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     position: relative;
+    z-index: 0;
 }
 
-@keyframes zoomFondo {
-    0% {
-        background-size: 100%;
-    }
-    50% {
-        background-size: 110%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
+
 
 header{
     display: flex;

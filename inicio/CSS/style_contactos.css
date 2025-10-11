@@ -8,7 +8,10 @@ body{
     z-index: 0;
 }
 
-
+header, main, footer, .parent {
+    position: relative;
+    z-index: 1; /* Hace que el contenido quede por encima del fondo */
+}
 
 header{
     display: flex;

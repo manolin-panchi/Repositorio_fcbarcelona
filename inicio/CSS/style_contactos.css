@@ -1,7 +1,33 @@
 body{
     background-color: #a50044;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+   background-image: url('imagenes/fondobarça.jpg'); /* Ajusta la ruta si es necesario */
+    
+    /* Hace que cubra todo el fondo sin deformarse */
+    background-size: cover;
+    
+    /* Centra la imagen */
+    background-position: center;
+    
+    /* No repetir */
+    background-repeat: no-repeat;
+    
+    /* Mantener la imagen fija al hacer scroll */
+    background-attachment: fixed;
+    
+    /* Asegura que el contenido quede por encima */
+    position: relative;
+}
+
+@keyframes zoomFondo {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
 }
 
 header{
@@ -40,11 +66,16 @@ header{
   width: 200px;            /* Ancho */
   height: 200px;           /* Alto */
   background-color: lightblue; /* Color de fondo */
-  color: white;            /* Color del texto */
-  padding: 30px;           /* Espacio interno (entre texto y borde) */
+  padding: 20px;           /* Espacio interno (entre texto y borde) */
   border: 2px solid rgb(46, 8, 148);  /* Borde alrededor de la caja */
   margin: 30px;            /* Espacio hacia afuera de la caja */
-  border-radius: 50px;     /* Bordes redondeados */
+  border-radius: 10px;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.caja:hover {
+    transform: scale(1.05);
 }
 
 h4{

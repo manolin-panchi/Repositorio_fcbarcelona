@@ -109,7 +109,7 @@ h3{
 }
 
 .parent {
- 
+  display: flex;
 }
     
 .div1 {

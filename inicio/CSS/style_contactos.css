@@ -110,6 +110,10 @@ h3{
 
 .parent {
   display: flex;
+  flex-wrap: wrap;         
+  justify-content: center; 
+  gap: 8px;                
+  margin-right: 20px;
 }
     
 .div1 {

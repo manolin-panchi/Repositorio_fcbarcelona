@@ -6,6 +6,7 @@ body{
     background-attachment: fixed; 
     position: relative;
     z-index: 0;
+    height: 10%;
 }
 
 header, main, footer, .parent {
@@ -49,10 +50,10 @@ header{
   width: 200px;            /* Ancho */
   height: 200px;           /* Alto */
   background-color: lightblue; /* Color de fondo */
-  padding: 20px;           /* Espacio interno (entre texto y borde) */
+  padding: 10px;           /* Espacio interno (entre texto y borde) */
   border: 2px solid rgb(46, 8, 148);  /* Borde alrededor de la caja */
   margin: 30px;            /* Espacio hacia afuera de la caja */
-  border-radius: 10px;
+  border-radius: 15px;
   transition: transform 0.3s;
   z-index: 1;
 }
@@ -74,6 +75,7 @@ h4{
     padding: 14px;
    max-width: 300%;   /* Para que la imagen no se deforme */
    max-height: 100%;/* Se ajusta dentro de la caja */
+  
 }
 
 .i2{
@@ -106,11 +108,7 @@ h3{
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    margin-right: 20px;
+ 
 }
     
 .div1 {

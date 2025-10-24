@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><link rel="stylesheet" href="CSS/inicio.css">
+    <title>Document</title><link rel="stylesheet" href="CSS/inicio.css"><button id="btnarriba">Volver al inicio</button>
+
+<script>
+  const btn = document.getElementById('btnarriba');
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // CORRECCIÓN: 'smooth' con m
+    });
+  });
+</script>
 </head>
 <body>
     <header id="header" class="site-header">
@@ -118,18 +129,7 @@
     </div></div>
 </section>
 <div id="btntop"></div>
-<button id="btnarriba">Volver al inicio</button>
 
-<script>
-  const btn = document.getElementById('btnarriba');
-
-  btn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // CORRECCIÓN: 'smooth' con m
-    });
-  });
-</script>
 
 </body>
 </html>

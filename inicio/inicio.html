@@ -118,5 +118,15 @@
     </div></div>
 </section>
 <div id="btntop"></div>
+<button id="btnarriba">Volver al inicio</button>
+<script>
+    const btn = document.getElementById('btnarriba');
+    btn.addEventListener('click', () =>{
+        window.scrollTo({
+            top:0,
+            behavior: 'sooth'
+        });
+    });
+</script>
 </body>
 </html>

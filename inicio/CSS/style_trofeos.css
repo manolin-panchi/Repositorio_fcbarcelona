@@ -61,6 +61,7 @@ header {
 }
 
 .trofeo:hover {
+     width: 460px;
      border-color: #ffcc00;
      box-shadow: 0 0 20px gold;
 }

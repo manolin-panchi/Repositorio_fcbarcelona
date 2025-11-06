@@ -40,14 +40,19 @@ header {
    color: #ffffff;
 }
 
-.copa {
+.liga {
     width: 80px;
     height: auto;
 }
 
 header h1 {
+    justify-content: center;
     margin: 0;
     font-size: 2em;
+}
+
+.li{
+ padding: 10px 20px;
 }
 
 header p {
@@ -102,7 +107,6 @@ main {
     color: #dcdcdc;
 }
 
-/* Pie de página */
 footer {
     background-color: #a50044;
     padding: 10px;

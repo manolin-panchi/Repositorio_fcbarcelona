@@ -178,7 +178,7 @@ header{
       background: #a50044;
       color: #004D98;
       border: none;
-      border-radius: 50%;
+      border-radius: 0;
       padding: 10px 15px;
       cursor: pointer;
       font-size: 20px;

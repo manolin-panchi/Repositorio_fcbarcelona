@@ -24,6 +24,65 @@
   </header>
 
   <main>
+    <script>
+
+      const redes = document.querySelectorAll('.caja img');
+
+      redes.forEach((img) => {
+        img.addEventListener('click', (event) => {
+          const nombre = img.alt;
+         alert(`Vas a abrir el ${nombre} oficial del FC Barcelona`);
+        });
+      });
+
+      const cajas = document.querySelectorAll('.caja');
+
+      cajas.forEach((caja) => {
+        caja.addEventListener('mouseenter', () => {
+          caja.style.backgroundColor = 'rgba(255,255,255,0.2)';
+          caja.style.transform = 'scale(1.05)';
+          caja.style.transition = 'all 0.3s ease';
+        });
+       caja.addEventListener('mouseleave', () => {
+          caja.style.backgroundColor = 'rgba(255,255,255,0.1)';
+          caja.style.transform = 'scale(1)';
+        });
+      });
+
+      const boton = document.createElement('button');
+      boton.textContent = 'Pausar / Reanudar carrusel';
+      boton.style.margin = '20px auto';
+      boton.style.display = 'block';
+      boton.style.padding = '10px 20px';
+      boton.style.backgroundColor = '#29034d';
+      boton.style.color = 'white';
+      boton.style.border = 'none';
+      boton.style.borderRadius = '8px';
+      boton.style.cursor = 'pointer';
+      boton.style.fontWeight = 'bold';
+      boton.style.transition = 'background-color 0.3s';
+      boton.onmouseover = () => boton.style.backgroundColor = '#4b0082';
+      boton.onmouseout = () => boton.style.backgroundColor = '#29034d';
+
+      document.querySelector('.socios').prepend(boton);
+
+      const carrusel = document.querySelector('.slide-track');
+      let pausado = false;
+
+      boton.addEventListener('click', () => {
+       if (pausado) {
+        carrusel.style.animationPlayState = 'running';
+        pausado = false;
+       }else {
+            carrusel.style.animationPlayState = 'paused';
+           pausado = true;
+        }
+      });
+
+        const fecha = new Date();
+        console.log(`Página de contactos del Barça cargada el ${fecha.toLocaleDateString()} a las ${fecha.toLocaleTimeString()}`);
+    </script>
+
     <section class="parent">
       <div class="caja">
         <h3>TikTok</h3>

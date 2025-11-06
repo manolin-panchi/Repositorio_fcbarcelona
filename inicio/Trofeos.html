@@ -9,6 +9,7 @@
 <body>
      <header>
         <h1>Trofeos del FC Barcelona</h1>
+        <h4>(click en las cajas)</h4>
 
         <div class="logo">
           <img src="imagenes/escudobarcelona.png" alt="FC Barcelona" width="125" height="125">
@@ -24,6 +25,51 @@
     </header>
 
     <main class="contenedor">
+
+        <script>
+
+            const trofeos = document.querySelectorAll('.trofeo img');
+
+            trofeos.forEach((img) => {
+                img.addEventListener('click', (event) => {
+                    event.preventDefault(); 
+                 const titulo = img.alt;
+                    alert(`¡Has seleccionado el trofeo: ${titulo}!`);
+    
+                     window.location.href = img.parentElement.href;
+                });
+            });
+
+            const cajas = document.querySelectorAll('.trofeo');
+            cajas.forEach((caja) => {
+                caja.addEventListener('mouseenter', () => {
+                 caja.style.backgroundColor = '#e5e5e5';
+                });
+                caja.addEventListener('mouseleave', () => {
+                    caja.style.backgroundColor = '';
+                });
+             });
+
+            const boton = document.createElement('button');
+            boton.textContent = 'Mostrar / Ocultar trofeos';
+            boton.style.margin = '20px';
+            boton.style.padding = '10px';
+            boton.style.cursor = 'pointer';
+            document.querySelector('header').appendChild(boton);
+
+            const contenedor = document.querySelector('.contenedor');
+            boton.addEventListener('click', () => {
+                if (contenedor.style.display === 'none') {
+                    contenedor.style.display = 'grid';
+                } else {
+                    contenedor.style.display = 'none';
+                }
+            });
+
+            const footer = document.querySelector('footer p');
+            const fecha = new Date();
+            footer.textContent += ` | Última actualización: ${fecha.toLocaleDateString()}`;
+        </script>
 
         <div class="trofeo">
             <a href="champions.html"><img src="imagenes/uefa_champions_league_0.jpg" alt="Champions League" ></a>
@@ -58,7 +104,7 @@
         </div>
 
         <div class="trofeo">
-            <img src="imagenes/mundial-de-clubes.webp" alt="Mundial de Clubes">
+            <a href="mundialdeclubes.html"><img src="imagenes/mundial-de-clubes.webp" alt="Mundial de Clubes"></a>
             <div class="info">
                 <h2>Mundial de Clubes</h2>
                 <p><strong>3 títulos:</strong> 2009, 2011, 2015</p>

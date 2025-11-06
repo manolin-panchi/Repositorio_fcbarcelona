@@ -38,7 +38,7 @@ header {
 
 .contenedor {
     display: flex;
-    flex-direction: column center;
+    justify-content: center;
     gap: 25px;
     padding: 40px;
 }

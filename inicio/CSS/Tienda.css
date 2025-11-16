@@ -141,3 +141,15 @@ header{
 .badge-red {
     background-color: #ff2b2b;
 }
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagenes/colección\ nav.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

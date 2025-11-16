@@ -6,3 +6,10 @@ body{
     background: linear-gradient(to  right, #a50044, #004D98);
     
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 3, 77);
+    padding: 10px;
+}

@@ -6,10 +6,11 @@ body{
     background: linear-gradient(to  right, #a50044, #004D98);
     
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(41, 3, 77);
-    padding: 10px;
+.navbar {
+    background: rgb(41, 3, 77);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 15px 40px;
+    box-shadow: 0 8px 20px rgb(111, 13, 223);
 }
+

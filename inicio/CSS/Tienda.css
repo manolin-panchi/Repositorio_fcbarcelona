@@ -89,3 +89,55 @@ header{
     gap: 20px;
     padding: 30px;
 }
+
+.card {
+    background-color: #131533;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info h3 {
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.subtitulo {
+    color: #fbd35e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-blue {
+    background-color: #0047ff;
+}
+
+.badge-red {
+    background-color: #ff2b2b;
+}

@@ -49,5 +49,34 @@
     </div>
 </section>        
   
+<script>
+window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = "rgba(41, 3, 77, 0.9)";
+        header.style.transition = "0.3s";
+    } else {
+        header.style.backgroundColor = "rgb(41, 3, 77)";
+    }
+});
+
+const aparecer = document.querySelectorAll(".cont, .cont2");
+
+function animar() {
+    aparecer.forEach(function (elem) {
+        let distancia = elem.getBoundingClientRect().top;
+
+        if (distancia < window.innerHeight - 120) {
+            elem.style.opacity = "1";
+            elem.style.transform = "translate(-50%, -50%) scale(1)";
+            elem.style.transition = "0.7s ease-out";
+        }
+    });
+}
+
+window.addEventListener("scroll", animar);
+animar();
+</script>
 </body>
 </html>

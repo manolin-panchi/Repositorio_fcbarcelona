@@ -138,11 +138,11 @@ header{
 }
 
 .center{
-    background-image: url('');
+    background-image: url('../imagenes/banner-centro.webp');
 }
 
 .right{
-    background-image: url('');
+    background-image: url('../imagenes/banner-der.webp');
 }
 
 /* ---- Texto centrado ---- */

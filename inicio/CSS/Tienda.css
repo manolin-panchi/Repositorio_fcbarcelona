@@ -119,7 +119,7 @@ header{
     background-color: #e5b700;
 }
 
-/* ---- Banner de 3 imágenes ---- */
+
 .content-3img{
     display: flex;
     height: 100vh;
@@ -132,17 +132,17 @@ header{
     background-position: center;
 }
 
-/* Configurá acá tus 3 imágenes */
+
 .left{
-    background-image: url('..imagenes/banner-izq.webp');
+    background-image: url('../imagenes/banner-izq.webp');
 }
 
 .center{
-    background-image: url('..imagenes/banner-centro.webp');
+    background-image: url('');
 }
 
 .right{
-    background-image: url('..imagenes/banner-der.webp');
+    background-image: url('');
 }
 
 /* ---- Texto centrado ---- */

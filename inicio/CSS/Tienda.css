@@ -39,21 +39,18 @@ header{
     color: aqvidua;
 }
 .content{
-    display: flex;
+    
+    width: 100%;
     height: 100vh;
-    position: relative;
-}
-.img{
-    width: 50%;
+    background-image: url('../imagenes/banner-equiepaciones.webp');
     background-size: cover;
     background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.left{
-    background-image: url('../imagenes/HJ4603-784_431735711_D_A_1X1_4ebdb94b-be58-4c4a-bceb-d3900f4fdc4f.webp');
-}
-.right{
-    background-image: url('../imagenes/VO250923A56019_med.webp');
-}
+
 .cont{
     position: absolute;
     top: 50%;
@@ -81,65 +78,6 @@ header{
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-}
-
-.catalogo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 30px;
-}
-
-.card {
-    background-color: #8d93eb;
-    padding: 15px;
-    border-radius: 5px;
-    position: relative;
-}
-
-.product-img {
-    width: 100%;
-    border-radius: 4px;
-}
-
-.info {
-    margin-top: 10px;
-}
-
-.info h3 {
-    font-size: 15px;
-    margin: 10px 0;
-    line-height: 1.4;
-}
-
-.subtitulo {
-    color: #fbd35e;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.price {
-    margin-top: 5px;
-    font-size: 16px;
-}
-
-.badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 4px 10px;
-    border-radius: 3px;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-}
-
-.badge-blue {
-    background-color: #0047ff;
-}
-
-.badge-red {
-    background-color: #ff2b2b;
 }
 
 .banner {
@@ -179,4 +117,64 @@ header{
 
 .btn:hover {
     background-color: #e5b700;
+}
+
+
+.content-3img{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.img3{
+    width: 33.33%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.left{
+    background-image: url('../imagenes/banner-izq.webp');
+}
+
+.center{
+    background-image: url('');
+}
+
+.right{
+    background-image: url('');
+}
+
+/* ---- Texto centrado ---- */
+.cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.cont h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.cont h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
 }
